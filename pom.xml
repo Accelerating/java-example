@@ -6,9 +6,9 @@
 
     <groupId>com.xxzou</groupId>
     <artifactId>java-example</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <modules>
-        <module>java-example-core</module>
+        <module>java-example-javase</module>
     </modules>
 
     <packaging>pom</packaging>
