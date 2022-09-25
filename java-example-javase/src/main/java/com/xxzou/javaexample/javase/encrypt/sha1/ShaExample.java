@@ -1,4 +1,4 @@
-package com.xxzou.javaexample.javase.encode.sha1;
+package com.xxzou.javaexample.javase.encrypt.sha1;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;

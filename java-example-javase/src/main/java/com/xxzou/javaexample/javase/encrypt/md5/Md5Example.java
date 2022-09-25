@@ -1,4 +1,4 @@
-package com.xxzou.javaexample.javase.encode.md5;
+package com.xxzou.javaexample.javase.encrypt.md5;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;

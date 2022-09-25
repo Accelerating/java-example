@@ -1,4 +1,4 @@
-package com.xxzou.javaexample.javase.encode.base64;
+package com.xxzou.javaexample.javase.encrypt.base64;
 
 import java.util.Base64;
 
