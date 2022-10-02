@@ -12,7 +12,8 @@ import java.util.List;
 public class ReadExample {
 
     public static void main(String[] args) {
-
+        String s = readToString(new File("D:/security/ps.txt"));
+        System.out.println(s);
     }
 
     public static byte[] readToBytes(File file){
@@ -23,7 +24,7 @@ public class ReadExample {
 
             int readBytes = 0;
             while((readBytes = in.read(buf)) != -1){
-                out.write(data, 0, readBytes);
+                out.write(buf, 0, readBytes);
             }
             data = out.toByteArray();
         }catch (Exception e){
