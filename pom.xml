@@ -10,6 +10,7 @@
     <modules>
         <module>java-example-javase</module>
         <module>java-example-net</module>
+        <module>java-example-redis</module>
     </modules>
 
     <packaging>pom</packaging>
