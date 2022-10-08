@@ -2,20 +2,13 @@ package com.xxzou.javaexample.redis.lettuce;
 
 import io.lettuce.core.*;
 import io.lettuce.core.api.StatefulRedisConnection;
-import io.lettuce.core.api.async.RedisAsyncCommands;
-import io.lettuce.core.api.reactive.RedisReactiveCommands;
 import io.lettuce.core.api.sync.RedisCommands;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
 
-import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Duration;
-import java.util.Enumeration;
-import java.util.List;
 
 
 public class LettuceClientExample {
@@ -50,7 +43,7 @@ public class LettuceClientExample {
 
         //use lua script
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-        URL lua = classLoader.getResource("lua/incrByAndExpire.lua");
+        URL lua = classLoader.getResource("lua/incrbyAndExpire.lua");
         Path scriptPath = Paths.get(lua.toURI());
         byte[] script = Files.readAllBytes(scriptPath);
         RedisCommands<String, String> syncCommand = connect.sync();
