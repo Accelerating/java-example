@@ -1,4 +1,4 @@
-package com.xxzou.javaexample.redis.springdata.service;
+package com.xxzou.javaexample.redis.springdata.basic;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
@@ -17,12 +17,8 @@ public class LuaScriptService {
 
     private Map<String, RedisScript<?>> scriptCache = new ConcurrentHashMap<>();
 
+    @Autowired
     private StringRedisTemplate redisTemplate;
-
-    public LuaScriptService(@Autowired StringRedisTemplate redisTemplate) throws Exception {
-        this.redisTemplate = redisTemplate;
-
-    }
 
     public <T> T execute(String scriptFileName, Class<T> resultType, List<String> keys, String... args){
         RedisScript<?> script = scriptCache.computeIfAbsent(scriptFileName, (k)->{

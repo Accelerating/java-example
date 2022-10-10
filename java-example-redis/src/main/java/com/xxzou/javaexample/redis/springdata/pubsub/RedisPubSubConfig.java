@@ -11,7 +11,7 @@ import org.springframework.data.redis.listener.RedisMessageListenerContainer;
  * @date 2022/10/10 12:09
  */
 @Configuration
-public class PubSubConfig {
+public class RedisPubSubConfig {
 
     @Bean
     public RedisMessageListenerContainer redisMessageListenerContainer(RedisConnectionFactory factory, RedisSubscriber subscriber){

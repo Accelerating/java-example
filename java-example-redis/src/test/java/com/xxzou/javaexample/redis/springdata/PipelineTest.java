@@ -1,6 +1,6 @@
 package com.xxzou.javaexample.redis.springdata;
 
-import com.xxzou.javaexample.redis.springdata.service.PipelineService;
+import com.xxzou.javaexample.redis.springdata.basic.PipelineService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

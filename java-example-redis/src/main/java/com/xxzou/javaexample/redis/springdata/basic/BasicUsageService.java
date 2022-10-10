@@ -1,4 +1,4 @@
-package com.xxzou.javaexample.redis.springdata.service;
+package com.xxzou.javaexample.redis.springdata.basic;
 
 import com.xxzou.javaexample.redis.springdata.utils.JsonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,11 +8,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class BasicUsageService {
 
+    @Autowired
     private StringRedisTemplate redisTemplate;
-
-    public BasicUsageService(@Autowired StringRedisTemplate redisTemplate){
-        this.redisTemplate = redisTemplate;
-    }
 
     public String get(String key){
         return get(key, null);
