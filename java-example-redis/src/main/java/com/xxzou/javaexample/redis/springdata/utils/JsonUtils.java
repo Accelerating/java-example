@@ -8,12 +8,12 @@ import java.util.List;
 
 public class JsonUtils {
 
-    private static ObjectMapper mapper = new ObjectMapper();
+    public static final ObjectMapper MAPPER = new ObjectMapper();
 
     public static String toJson(Object obj){
         String json = null;
         try{
-            json = mapper.writeValueAsString(obj);
+            json = MAPPER.writeValueAsString(obj);
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -23,7 +23,7 @@ public class JsonUtils {
     public static <T> T toObject(String json, Class<T> toValueType){
         T obj = null;
         try{
-            obj = mapper.readValue(json, toValueType);
+            obj = MAPPER.readValue(json, toValueType);
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -33,8 +33,8 @@ public class JsonUtils {
     public static <T> List<T> toList(String json, Class<T> toValueType){
         List<T> list = null;
         try{
-            CollectionType collectionType = mapper.getTypeFactory().constructCollectionType(ArrayList.class, toValueType);
-            list = mapper.readValue(json, collectionType);
+            CollectionType collectionType = MAPPER.getTypeFactory().constructCollectionType(ArrayList.class, toValueType);
+            list = MAPPER.readValue(json, collectionType);
         }catch (Exception e){
             e.printStackTrace();
         }
