@@ -11,6 +11,7 @@
         <module>java-example-javase</module>
         <module>java-example-net</module>
         <module>java-example-redis</module>
+        <module>java-example-mysql</module>
     </modules>
 
     <packaging>pom</packaging>
