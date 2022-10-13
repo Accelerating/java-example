@@ -1,18 +1,24 @@
 package com.xxzou.javaexample.mysql.entity;
 
+import javax.persistence.*;
 import java.util.Date;
 
 /**
  * @author zxx
  * @date 2022/10/12 16:13
  */
+@Entity
 public class UserInfo {
 
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
     private String nickname;
     private Integer age;
     private Integer gender;
     private String email;
+    private Long roleId;
+    @Column(name = "create_time")
     private Date createTime;
 
     public Long getId() {
@@ -55,6 +61,14 @@ public class UserInfo {
         this.email = email;
     }
 
+    public Long getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(Long roleId) {
+        this.roleId = roleId;
+    }
+
     public Date getCreateTime() {
         return createTime;
     }
@@ -71,6 +85,7 @@ public class UserInfo {
                 ", age=" + age +
                 ", gender=" + gender +
                 ", email='" + email + '\'' +
+                ", roleId=" + roleId +
                 ", createTime=" + createTime +
                 '}';
     }
