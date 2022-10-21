@@ -11,5 +11,12 @@
 
     <artifactId>java-example-log</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>2.7.4</version>
+        </dependency>
+    </dependencies>
 
 </project>

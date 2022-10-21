@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: java-example-log
+
+logging:
+  level:
+    root: info
+  config: 'classpath:java-example-logback.xml'
+
