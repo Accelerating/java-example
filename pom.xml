@@ -12,6 +12,11 @@
         <module>java-example-net</module>
         <module>java-example-redis</module>
         <module>java-example-mysql</module>
+        <module>java-example-log</module>
+        <module>java-example-elasticsearch</module>
+        <module>java-example-mq</module>
+        <module>java-example-cache</module>
+        <module>java-example-concurrency</module>
     </modules>
 
     <packaging>pom</packaging>

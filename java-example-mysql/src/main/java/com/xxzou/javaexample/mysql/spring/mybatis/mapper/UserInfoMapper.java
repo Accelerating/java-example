@@ -17,5 +17,6 @@ public interface UserInfoMapper {
 
     List<UserInfo> findUserByName(@Param("nickname")String nickname);
 
-
+    @Select("select 'test'")
+    String test();
 }
