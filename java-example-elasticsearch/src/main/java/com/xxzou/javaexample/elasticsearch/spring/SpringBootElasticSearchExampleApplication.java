@@ -1,4 +1,4 @@
-package com.xxzou.javaexample.elasticsearch;
+package com.xxzou.javaexample.elasticsearch.spring;
 
 
 import org.springframework.boot.SpringApplication;

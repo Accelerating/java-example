@@ -1,11 +1,25 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.152.136:3306/test
+    url: jdbc:mysql://192.168.152.130:3306/test
     username: xxzou
-    password: 123456
+    password: Abc1234567890!
   jpa:
     show-sql: true
+
+
+datasource:
+  a:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jdbc-url: jdbc:mysql://192.168.152.130:3306/data_source1
+    username: xxzou
+    password: Abc1234567890!
+  b:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jdbc-url: jdbc:mysql://192.168.152.130:3306/data_source2
+    username: xxzou
+    password: Abc1234567890!
+
 
 
 mybatis:

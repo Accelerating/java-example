@@ -1,7 +1,7 @@
 package com.xxzou.javaexample.elasticsearch.test;
 
 
-import com.xxzou.javaexample.elasticsearch.entity.Book;
+import com.xxzou.javaexample.elasticsearch.spring.entity.Book;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.junit.Test;

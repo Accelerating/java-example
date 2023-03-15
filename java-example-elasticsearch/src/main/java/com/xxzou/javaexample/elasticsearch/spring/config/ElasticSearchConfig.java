@@ -1,4 +1,4 @@
-package com.xxzou.javaexample.elasticsearch.config;
+package com.xxzou.javaexample.elasticsearch.spring.config;
 
 import org.apache.http.HttpHost;
 import org.elasticsearch.client.RestClient;

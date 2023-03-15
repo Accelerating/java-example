@@ -1,4 +1,4 @@
-package com.xxzou.javaexample.elasticsearch.entity;
+package com.xxzou.javaexample.elasticsearch.spring.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.DateFormat;

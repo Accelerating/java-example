@@ -15,4 +15,13 @@ public class JsonUtils {
         return null;
     }
 
+    public <T> T toObject(String json, Class<T> type){
+        try{
+            return mapper.readValue(json, type);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+
 }
