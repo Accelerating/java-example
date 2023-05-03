@@ -38,7 +38,7 @@ public class MySQLConnection {
 
     public void connect() throws SQLException {
         connection = DriverManager.getConnection(this.url, this.username, this.password);
-        connection.setAutoCommit(false);
+        connection.setAutoCommit(this.autoCommit);
     }
 
     public <T> List<T> query(String sql, Class<T> resultType, Object... params){
