@@ -1,0 +1,5 @@
+# 如果使用的是spring boot 2.6以上的版本需要加上这个才能整合swagger3，不然启动会报错
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher

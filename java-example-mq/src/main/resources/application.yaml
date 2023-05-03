@@ -8,3 +8,11 @@ rocketmq:
     maxMessageSize: 4096
     # 发送消息失败重试次数，默认2
     retryTimesWhenSendFailed: 2
+
+spring:
+  rabbitmq:
+    host: 192.168.3.23
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: /

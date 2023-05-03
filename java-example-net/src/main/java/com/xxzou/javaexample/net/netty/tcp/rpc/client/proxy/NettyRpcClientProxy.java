@@ -19,6 +19,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class NettyRpcClientProxy {
@@ -62,7 +63,7 @@ public class NettyRpcClientProxy {
             String interfaceName = method.getDeclaringClass().getSimpleName();
             String methodName = method.getName();
             Class<?>[] parameterTypes = method.getParameterTypes();
-            List<String> paramList = Stream.of(parameterTypes).map(Class::getSimpleName).toList();
+            List<String> paramList = Stream.of(parameterTypes).map(Class::getSimpleName).collect(Collectors.toList());
             String service = interfaceName + "." + methodName + paramList;
             Object result = connection.invoke(service, args, returnType);
             return result;

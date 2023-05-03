@@ -12,10 +12,17 @@
     <artifactId>java-example-cache</artifactId>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.xxzou</groupId>
+            <artifactId>java-example-common</artifactId>
+            <version>1.0</version>
+        </dependency>
+
         <dependency>
             <groupId>com.github.ben-manes.caffeine</groupId>
             <artifactId>caffeine</artifactId>
-            <version>3.1.1</version>
+            <version>2.9.3</version>
         </dependency>
 
 
@@ -28,7 +35,21 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
-            <version>2.7.4</version>
         </dependency>
+
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>4.2.3</version>
+        </dependency>
+
     </dependencies>
+
+    <build>
+        <testResources>
+            <testResource>
+                <directory>src/main/resources</directory>
+            </testResource>
+        </testResources>
+    </build>
 </project>
