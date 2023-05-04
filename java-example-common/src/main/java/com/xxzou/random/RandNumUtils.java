@@ -9,4 +9,8 @@ public class RandNumUtils {
         return random.nextInt(start, end);
     }
 
+    public static long getRandLong(int start, int end){
+        ThreadLocalRandom random = ThreadLocalRandom.current();
+        return random.nextLong(start, end);
+    }
 }
